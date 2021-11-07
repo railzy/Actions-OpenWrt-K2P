@@ -14,5 +14,9 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+# passwall
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# openwrt origin packages
+echo 'src-git openwrtpackages https://github.com/openwrt/packages' >>feeds.conf.default
+echo 'src-git openwrtluci https://github.com/openwrt/luci' >>feeds.conf.default
