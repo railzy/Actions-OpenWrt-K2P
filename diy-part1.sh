@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+# use old version for uhttpd issue
+git reset --hard 420f085
+
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
